@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		880CFA5F20ECCEA600A864FC /* UniversalAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880CFA5E20ECCEA600A864FC /* UniversalAccess.framework */; };
+		882437541EBF9D1B00D0962E /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882437531EBF9D1B00D0962E /* MASShortcut.framework */; };
+		882437551EBF9D1B00D0962E /* MASShortcut.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 882437531EBF9D1B00D0962E /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		88455B7D1EBF76DC0010AFD5 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88455B7C1EBF76DC0010AFD5 /* Mode.swift */; };
+		884A768820EE5E2E00ACE1C4 /* MonoState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A768720EE5E2E00ACE1C4 /* MonoState.swift */; };
+		88893AFB20ECC92B003E3BBA /* SettingsWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88893AFA20ECC92B003E3BBA /* SettingsWrapper.m */; };
+		88A64D651EBDC8490017D58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A64D641EBDC8490017D58E /* AppDelegate.swift */; };
+		88A64D671EBDC8490017D58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A64D661EBDC8490017D58E /* Assets.xcassets */; };
+		88A64D721EBDCBC90017D58E /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A64D711EBDCBC90017D58E /* MenuController.swift */; };
+		88E942DF1EDA3A9B001B3746 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88E942DE1EDA3A9B001B3746 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		882437501EBF976D00D0962E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				882437551EBF9D1B00D0962E /* MASShortcut.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		880CFA5E20ECCEA600A864FC /* UniversalAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniversalAccess.framework; path = ../../../../../../System/Library/PrivateFrameworks/UniversalAccess.framework; sourceTree = "<group>"; };
+		882437531EBF9D1B00D0962E /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MASShortcut.framework; sourceTree = "<group>"; };
+		88455B7C1EBF76DC0010AFD5 /* Mode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
+		884A768720EE5E2E00ACE1C4 /* MonoState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MonoState.swift; path = ../../../../../../Emanuel/Coding/Swift/Projects/AudioHotkeys/AudioHotkeys/MonoState.swift; sourceTree = "<group>"; };
+		886A0E1D20EE0F2600DCFB64 /* LibraryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LibraryHeader.h; path = ../../../../../../Emanuel/Coding/Swift/Projects/AudioHotkeys/AudioHotkeys/LibraryHeader.h; sourceTree = "<group>"; };
+		88893AF920ECC92B003E3BBA /* SettingsWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SettingsWrapper.h; path = ../../../../../../Emanuel/Coding/Swift/Projects/AudioHotkeys/AudioHotkeys/SettingsWrapper.h; sourceTree = "<group>"; };
+		88893AFA20ECC92B003E3BBA /* SettingsWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SettingsWrapper.m; path = ../../../../../../Emanuel/Coding/Swift/Projects/AudioHotkeys/AudioHotkeys/SettingsWrapper.m; sourceTree = "<group>"; };
+		88A64D611EBDC8490017D58E /* AudioHotkeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioHotkeys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A64D641EBDC8490017D58E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88A64D661EBDC8490017D58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88A64D6B1EBDC8490017D58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88A64D711EBDCBC90017D58E /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		88A64D791EBE16EC0017D58E /* AudioHotkeys-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioHotkeys-Bridging-Header.h"; sourceTree = "<group>"; };
+		88E942DE1EDA3A9B001B3746 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88A64D5E1EBDC8490017D58E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880CFA5F20ECCEA600A864FC /* UniversalAccess.framework in Frameworks */,
+				882437541EBF9D1B00D0962E /* MASShortcut.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		880CFA5D20ECCEA500A864FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				880CFA5E20ECCEA600A864FC /* UniversalAccess.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88A64D581EBDC8490017D58E = {
+			isa = PBXGroup;
+			children = (
+				882437531EBF9D1B00D0962E /* MASShortcut.framework */,
+				88A64D631EBDC8490017D58E /* AudioHotkeys */,
+				88A64D621EBDC8490017D58E /* Products */,
+				880CFA5D20ECCEA500A864FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		88A64D621EBDC8490017D58E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88A64D611EBDC8490017D58E /* AudioHotkeys.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88A64D631EBDC8490017D58E /* AudioHotkeys */ = {
+			isa = PBXGroup;
+			children = (
+				88A64D641EBDC8490017D58E /* AppDelegate.swift */,
+				88A64D711EBDCBC90017D58E /* MenuController.swift */,
+				884A768720EE5E2E00ACE1C4 /* MonoState.swift */,
+				88455B7C1EBF76DC0010AFD5 /* Mode.swift */,
+				88A64D791EBE16EC0017D58E /* AudioHotkeys-Bridging-Header.h */,
+				886A0E1D20EE0F2600DCFB64 /* LibraryHeader.h */,
+				88893AF920ECC92B003E3BBA /* SettingsWrapper.h */,
+				88893AFA20ECC92B003E3BBA /* SettingsWrapper.m */,
+				88E942DE1EDA3A9B001B3746 /* MainMenu.xib */,
+				88A64D661EBDC8490017D58E /* Assets.xcassets */,
+				88A64D6B1EBDC8490017D58E /* Info.plist */,
+			);
+			path = AudioHotkeys;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88A64D601EBDC8490017D58E /* AudioHotkeys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88A64D6E1EBDC8490017D58E /* Build configuration list for PBXNativeTarget "AudioHotkeys" */;
+			buildPhases = (
+				88A64D5D1EBDC8490017D58E /* Sources */,
+				88A64D5E1EBDC8490017D58E /* Frameworks */,
+				88A64D5F1EBDC8490017D58E /* Resources */,
+				882437501EBF976D00D0962E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioHotkeys;
+			productName = AudioHotkeys;
+			productReference = 88A64D611EBDC8490017D58E /* AudioHotkeys.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88A64D591EBDC8490017D58E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Emanuel Mairoll";
+				TargetAttributes = {
+					88A64D601EBDC8490017D58E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 52M2HV7QQ7;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 88A64D5C1EBDC8490017D58E /* Build configuration list for PBXProject "AudioHotkeys" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88A64D581EBDC8490017D58E;
+			productRefGroup = 88A64D621EBDC8490017D58E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88A64D601EBDC8490017D58E /* AudioHotkeys */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88A64D5F1EBDC8490017D58E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88A64D671EBDC8490017D58E /* Assets.xcassets in Resources */,
+				88E942DF1EDA3A9B001B3746 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88A64D5D1EBDC8490017D58E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88A64D721EBDCBC90017D58E /* MenuController.swift in Sources */,
+				88455B7D1EBF76DC0010AFD5 /* Mode.swift in Sources */,
+				884A768820EE5E2E00ACE1C4 /* MonoState.swift in Sources */,
+				88893AFB20ECC92B003E3BBA /* SettingsWrapper.m in Sources */,
+				88A64D651EBDC8490017D58E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		88A64D6C1EBDC8490017D58E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88A64D6D1EBDC8490017D58E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		88A64D6F1EBDC8490017D58E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)/AudioHotkeys",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AudioHotkeys/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emanuelmairoll.AudioHotkeys;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioHotkeys/AudioHotkeys-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(SYSTEM_LIBRARY_DIR)/PrivateFrameworks";
+			};
+			name = Debug;
+		};
+		88A64D701EBDC8490017D58E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)/AudioHotkeys",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AudioHotkeys/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emanuelmairoll.AudioHotkeys;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioHotkeys/AudioHotkeys-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(SYSTEM_LIBRARY_DIR)/PrivateFrameworks";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88A64D5C1EBDC8490017D58E /* Build configuration list for PBXProject "AudioHotkeys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88A64D6C1EBDC8490017D58E /* Debug */,
+				88A64D6D1EBDC8490017D58E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88A64D6E1EBDC8490017D58E /* Build configuration list for PBXNativeTarget "AudioHotkeys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88A64D6F1EBDC8490017D58E /* Debug */,
+				88A64D701EBDC8490017D58E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88A64D591EBDC8490017D58E /* Project object */;
+}
