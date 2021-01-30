@@ -1,34 +1,42 @@
 //
-//  MenuController.swift
+//  AppMenu.swift
 //  AudioHotkeys
 //
-//  Created by Emanuel Mairoll on 06/05/2017.
-//  Copyright © 2017 Emanuel Mairoll. All rights reserved.
+//  Created by test on 29.01.21.
+//  Copyright © 2021 Emanuel Mairoll. All rights reserved.
 //
 
 import Cocoa
+import HotKey
 
-class MenuController: NSObject {
-    
-    @IBOutlet weak var shortcutView: MASShortcutView!
-    let statusItem:NSStatusItem
-    let monoManager = MonoState()
+class AppMenu: NSMenu {
+    let parent: NSStatusItem
+    let monoStatePersistor = MonoStatePersistor()
     
     var currentMode:Mode?
     var currentDeviceName:String = SettingsWrapper.currentDeviceName()
+
+    var hotkeys: [HotKey] = []
     
-    override init() {
-        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        statusItem.menu = NSMenu()
+    init(parent: NSStatusItem) {
+        self.parent = parent
         
-        super.init()
-        
+        super.init(title: "")
+    
         initMenu()
         initShortcuts()
         initListener()
         
         changeDisplayedMode(to: Mode.detectCurrent())
-
+        
+    }
+        
+    required init(coder: NSCoder) {
+        let p:NSStatusItem? = nil
+        self.parent = p!
+        
+        super.init(coder: coder)
+        print("Hoden2")
     }
     
     func initMenu(){
@@ -40,33 +48,36 @@ class MenuController: NSObject {
             item.image = image
             item.target = self
             item.action = #selector(self.modeClicked)
-            statusItem.menu!.addItem(item)
+            self.addItem(item)
         }
         
         let separator = NSMenuItem.separator()
-        statusItem.menu!.addItem(separator)
+        self.addItem(separator)
         
         let quitItem = NSMenuItem()
         quitItem.title = "Quit"
         quitItem.target = self
         quitItem.action = #selector(self.quitClicked)
-        statusItem.menu!.addItem(quitItem)
+        self.addItem(quitItem)
     }
     
     func initShortcuts(){
         for mode in Mode.knownModes{
-            MASShortcutMonitor.shared().register(MASShortcut(keyCode: UInt(mode.keyCode), modifierFlags: 1835008), withAction: {
-                mode.apply(oldMode: self.currentMode)
-                self.changeDisplayedMode(to: mode)
-            })
+            let test = HotKey(key: .r, modifiers: [.command, .option])
+            test.keyDownHandler = {
+                print("test")
+            }
+            
+            if let key = mode.key{
+                let hotKey = HotKey(key: key, modifiers: [.command, .option, .control])
+                hotKey.keyDownHandler = {
+                    mode.apply(oldMode: self.currentMode)
+                    self.changeDisplayedMode(to: mode)
+                }
+                
+                hotkeys.append(hotKey)
+            }
         }
-        
-        //DEBUG
-        /*
-        MASShortcutMonitor.shared().register(MASShortcut(keyCode: UInt(kVK_ANSI_U), modifierFlags: 1835008), withAction: {
-            self.changeDisplayedMode(to: Mode.detectCurrent())
-        })
-        */
     }
     
     func initListener(){
@@ -76,11 +87,10 @@ class MenuController: NSObject {
     }
     
     @objc func onHardwareChanged(){
-        let updatedName = SettingsWrapper.currentDeviceName()!;
-        if currentDeviceName != updatedName {
+        if let updatedName = SettingsWrapper.currentDeviceName(), currentDeviceName != updatedName {
             NSLog("onHardwareChanged (checked)")
-            monoManager.setForDevice(name: currentDeviceName, isSet: SettingsWrapper.isMonoAudio())
-            SettingsWrapper.setMonoAudio(monoManager.forDevice(name: updatedName))
+            monoStatePersistor.setForDevice(name: currentDeviceName, isSet: SettingsWrapper.isMonoAudio())
+            SettingsWrapper.setMonoAudio(monoStatePersistor.forDevice(name: updatedName))
             currentDeviceName = updatedName;
 
             self.changeDisplayedMode(to: Mode.detectCurrent())
@@ -89,7 +99,7 @@ class MenuController: NSObject {
     
     @objc func onMonoChanged(){
         NSLog("onMonoChanged")
-        monoManager.setForDevice(name: currentDeviceName, isSet: SettingsWrapper.isMonoAudio())
+        monoStatePersistor.setForDevice(name: currentDeviceName, isSet: SettingsWrapper.isMonoAudio())
         self.changeDisplayedMode(to: Mode.detectCurrent())
     }
     
@@ -99,12 +109,11 @@ class MenuController: NSObject {
     }
     
     func changeDisplayedMode(to newMode: Mode){
-        
         let icon = newMode.icon
         icon.isTemplate = true
-        statusItem.image = icon
+        parent.button?.image = icon
         
-        for menuItem in statusItem.menu!.items {
+        for menuItem in self.items {
             menuItem.state = newMode === menuItem.mode() ? NSControl.StateValue.on : NSControl.StateValue.off
         }
         
@@ -121,4 +130,3 @@ class MenuController: NSObject {
         NSApplication.shared.terminate(self)
     }
 }
-

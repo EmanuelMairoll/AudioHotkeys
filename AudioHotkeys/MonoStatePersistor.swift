@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MonoState{
+class MonoStatePersistor{
     
     let defaults = UserDefaults.standard
     var monoStates:[String : Bool]

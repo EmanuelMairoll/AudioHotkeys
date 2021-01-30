@@ -3,20 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		524C36CC25C3F40B0082A5C1 /* MonoStatePersistor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C36CB25C3F40B0082A5C1 /* MonoStatePersistor.swift */; };
+		524C36D225C3F4530082A5C1 /* SettingsWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 524C36D025C3F4530082A5C1 /* SettingsWrapper.m */; };
+		524C36D425C3F9360082A5C1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C36D325C3F9360082A5C1 /* main.swift */; };
+		524C36D825C3FB870082A5C1 /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C36D725C3FB870082A5C1 /* AppMenu.swift */; };
+		52BC977425C55C0E00B010DB /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 52BC977325C55C0E00B010DB /* HotKey */; };
 		880CFA5F20ECCEA600A864FC /* UniversalAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880CFA5E20ECCEA600A864FC /* UniversalAccess.framework */; };
-		882437541EBF9D1B00D0962E /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882437531EBF9D1B00D0962E /* MASShortcut.framework */; };
-		882437551EBF9D1B00D0962E /* MASShortcut.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 882437531EBF9D1B00D0962E /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		88455B7D1EBF76DC0010AFD5 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88455B7C1EBF76DC0010AFD5 /* Mode.swift */; };
-		884A768820EE5E2E00ACE1C4 /* MonoState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A768720EE5E2E00ACE1C4 /* MonoState.swift */; };
-		88893AFB20ECC92B003E3BBA /* SettingsWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88893AFA20ECC92B003E3BBA /* SettingsWrapper.m */; };
 		88A64D651EBDC8490017D58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A64D641EBDC8490017D58E /* AppDelegate.swift */; };
 		88A64D671EBDC8490017D58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A64D661EBDC8490017D58E /* Assets.xcassets */; };
-		88A64D721EBDCBC90017D58E /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A64D711EBDCBC90017D58E /* MenuController.swift */; };
-		88E942DF1EDA3A9B001B3746 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88E942DE1EDA3A9B001B3746 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +25,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				882437551EBF9D1B00D0962E /* MASShortcut.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,20 +32,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		524C36CB25C3F40B0082A5C1 /* MonoStatePersistor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonoStatePersistor.swift; sourceTree = "<group>"; };
+		524C36CD25C3F4380082A5C1 /* LibraryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryHeader.h; sourceTree = "<group>"; };
+		524C36D025C3F4530082A5C1 /* SettingsWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsWrapper.m; sourceTree = "<group>"; };
+		524C36D125C3F4530082A5C1 /* SettingsWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsWrapper.h; sourceTree = "<group>"; };
+		524C36D325C3F9360082A5C1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		524C36D725C3FB870082A5C1 /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
+		524C36D925C41A0F0082A5C1 /* AudioHotkeys.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AudioHotkeys.entitlements; sourceTree = "<group>"; };
 		880CFA5E20ECCEA600A864FC /* UniversalAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniversalAccess.framework; path = ../../../../../../System/Library/PrivateFrameworks/UniversalAccess.framework; sourceTree = "<group>"; };
-		882437531EBF9D1B00D0962E /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MASShortcut.framework; sourceTree = "<group>"; };
 		88455B7C1EBF76DC0010AFD5 /* Mode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
-		884A768720EE5E2E00ACE1C4 /* MonoState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MonoState.swift; path = ../../../../../../Emanuel/Coding/Swift/Projects/AudioHotkeys/AudioHotkeys/MonoState.swift; sourceTree = "<group>"; };
-		886A0E1D20EE0F2600DCFB64 /* LibraryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LibraryHeader.h; path = ../../../../../../Emanuel/Coding/Swift/Projects/AudioHotkeys/AudioHotkeys/LibraryHeader.h; sourceTree = "<group>"; };
-		88893AF920ECC92B003E3BBA /* SettingsWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SettingsWrapper.h; path = ../../../../../../Emanuel/Coding/Swift/Projects/AudioHotkeys/AudioHotkeys/SettingsWrapper.h; sourceTree = "<group>"; };
-		88893AFA20ECC92B003E3BBA /* SettingsWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SettingsWrapper.m; path = ../../../../../../Emanuel/Coding/Swift/Projects/AudioHotkeys/AudioHotkeys/SettingsWrapper.m; sourceTree = "<group>"; };
 		88A64D611EBDC8490017D58E /* AudioHotkeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioHotkeys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A64D641EBDC8490017D58E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88A64D661EBDC8490017D58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88A64D6B1EBDC8490017D58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88A64D711EBDCBC90017D58E /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		88A64D791EBE16EC0017D58E /* AudioHotkeys-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioHotkeys-Bridging-Header.h"; sourceTree = "<group>"; };
-		88E942DE1EDA3A9B001B3746 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52BC977425C55C0E00B010DB /* HotKey in Frameworks */,
 				880CFA5F20ECCEA600A864FC /* UniversalAccess.framework in Frameworks */,
-				882437541EBF9D1B00D0962E /* MASShortcut.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +72,6 @@
 		88A64D581EBDC8490017D58E = {
 			isa = PBXGroup;
 			children = (
-				882437531EBF9D1B00D0962E /* MASShortcut.framework */,
 				88A64D631EBDC8490017D58E /* AudioHotkeys */,
 				88A64D621EBDC8490017D58E /* Products */,
 				880CFA5D20ECCEA500A864FC /* Frameworks */,
@@ -92,15 +89,16 @@
 		88A64D631EBDC8490017D58E /* AudioHotkeys */ = {
 			isa = PBXGroup;
 			children = (
+				524C36D925C41A0F0082A5C1 /* AudioHotkeys.entitlements */,
+				524C36D325C3F9360082A5C1 /* main.swift */,
 				88A64D641EBDC8490017D58E /* AppDelegate.swift */,
-				88A64D711EBDCBC90017D58E /* MenuController.swift */,
-				884A768720EE5E2E00ACE1C4 /* MonoState.swift */,
+				524C36D725C3FB870082A5C1 /* AppMenu.swift */,
+				524C36CB25C3F40B0082A5C1 /* MonoStatePersistor.swift */,
 				88455B7C1EBF76DC0010AFD5 /* Mode.swift */,
 				88A64D791EBE16EC0017D58E /* AudioHotkeys-Bridging-Header.h */,
-				886A0E1D20EE0F2600DCFB64 /* LibraryHeader.h */,
-				88893AF920ECC92B003E3BBA /* SettingsWrapper.h */,
-				88893AFA20ECC92B003E3BBA /* SettingsWrapper.m */,
-				88E942DE1EDA3A9B001B3746 /* MainMenu.xib */,
+				524C36CD25C3F4380082A5C1 /* LibraryHeader.h */,
+				524C36D125C3F4530082A5C1 /* SettingsWrapper.h */,
+				524C36D025C3F4530082A5C1 /* SettingsWrapper.m */,
 				88A64D661EBDC8490017D58E /* Assets.xcassets */,
 				88A64D6B1EBDC8490017D58E /* Info.plist */,
 			);
@@ -124,6 +122,9 @@
 			dependencies = (
 			);
 			name = AudioHotkeys;
+			packageProductDependencies = (
+				52BC977325C55C0E00B010DB /* HotKey */,
+			);
 			productName = AudioHotkeys;
 			productReference = 88A64D611EBDC8490017D58E /* AudioHotkeys.app */;
 			productType = "com.apple.product-type.application";
@@ -135,26 +136,28 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Emanuel Mairoll";
 				TargetAttributes = {
 					88A64D601EBDC8490017D58E = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 52M2HV7QQ7;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1240;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 88A64D5C1EBDC8490017D58E /* Build configuration list for PBXProject "AudioHotkeys" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
 			mainGroup = 88A64D581EBDC8490017D58E;
+			packageReferences = (
+				52BC977225C55C0E00B010DB /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
 			productRefGroup = 88A64D621EBDC8490017D58E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -170,7 +173,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				88A64D671EBDC8490017D58E /* Assets.xcassets in Resources */,
-				88E942DF1EDA3A9B001B3746 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,10 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88A64D721EBDCBC90017D58E /* MenuController.swift in Sources */,
 				88455B7D1EBF76DC0010AFD5 /* Mode.swift in Sources */,
-				884A768820EE5E2E00ACE1C4 /* MonoState.swift in Sources */,
-				88893AFB20ECC92B003E3BBA /* SettingsWrapper.m in Sources */,
+				524C36D425C3F9360082A5C1 /* main.swift in Sources */,
+				524C36D825C3FB870082A5C1 /* AppMenu.swift in Sources */,
+				524C36D225C3F4530082A5C1 /* SettingsWrapper.m in Sources */,
+				524C36CC25C3F40B0082A5C1 /* MonoStatePersistor.swift in Sources */,
 				88A64D651EBDC8490017D58E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +199,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -216,6 +220,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -254,6 +259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -274,6 +280,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -296,7 +303,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -305,10 +313,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AudioHotkeys/AudioHotkeys.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 52M2HV7QQ7;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)",
@@ -316,15 +326,22 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = AudioHotkeys/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.emanuelmairoll.AudioHotkeys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "AudioHotkeys/AudioHotkeys-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
-				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(SYSTEM_LIBRARY_DIR)/PrivateFrameworks";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 			};
 			name = Debug;
 		};
@@ -333,10 +350,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AudioHotkeys/AudioHotkeys.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 52M2HV7QQ7;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)",
@@ -344,14 +363,21 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = AudioHotkeys/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.emanuelmairoll.AudioHotkeys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "AudioHotkeys/AudioHotkeys-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
-				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(SYSTEM_LIBRARY_DIR)/PrivateFrameworks";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 			};
 			name = Release;
 		};
@@ -377,6 +403,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52BC977225C55C0E00B010DB /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52BC977325C55C0E00B010DB /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52BC977225C55C0E00B010DB /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88A64D591EBDC8490017D58E /* Project object */;
 }

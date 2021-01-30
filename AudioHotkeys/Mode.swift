@@ -7,29 +7,30 @@
 //
 
 import Foundation
+import HotKey
 
 class Mode{
-    static let STEREO = Mode(displayName:"Stereo", monoState:false, lrBalance:LR_BALANCE_CENTERVALUE, iconName: "icon_stereo", keyCode:kVK_UpArrow)
-    static let MONO = Mode(displayName:"Mono", monoState:true, lrBalance:LR_BALANCE_CENTERVALUE, iconName: "icon_mono", keyCode:kVK_DownArrow)
-    static let LEFT = Mode(displayName:"Left", monoState:true, lrBalance:LR_BALANCE_MINVALUE, iconName: "icon_left", keyCode:kVK_LeftArrow)
-    static let RIGHT = Mode(displayName:"Right", monoState:true, lrBalance:LR_BALANCE_MAXVALUE, iconName: "icon_right", keyCode:kVK_RightArrow)
-    static let UNKNOWN = Mode(displayName:"Unknown", monoState:nil, lrBalance:nil, iconName: "icon_unknown", keyCode:0)
+    static let STEREO = Mode(displayName:"Stereo", monoState:false, lrBalance:LR_BALANCE_CENTERVALUE, iconName: "icon_stereo", key:.upArrow)
+    static let MONO = Mode(displayName:"Mono", monoState:true, lrBalance:LR_BALANCE_CENTERVALUE, iconName: "icon_mono", key:.downArrow)
+    static let LEFT = Mode(displayName:"Left", monoState:true, lrBalance:LR_BALANCE_MINVALUE, iconName: "icon_left", key:.leftArrow)
+    static let RIGHT = Mode(displayName:"Right", monoState:true, lrBalance:LR_BALANCE_MAXVALUE, iconName: "icon_right", key:.rightArrow)
+    static let UNKNOWN = Mode(displayName:"Unknown", monoState:nil, lrBalance:nil, iconName: "icon_unknown", key: nil)
     
     static let knownModes = [STEREO, MONO, LEFT, RIGHT] as [Mode]
     
-    init(displayName:String, monoState:Bool?, lrBalance:Float?, iconName:String, keyCode:Int) {
+    init(displayName:String, monoState:Bool?, lrBalance:Float?, iconName:String, key: Key?) {
         self.displayName = displayName
         self.monoState = monoState
         self.lrBalance = lrBalance
-        self.icon = NSImage(named: NSImage.Name(rawValue: iconName))!
-        self.keyCode = keyCode
+        self.icon = NSImage(named: iconName)!
+        self.key = key
     }
     
     let displayName:String
     let monoState:Bool?
     let lrBalance:Float?
     let icon:NSImage
-    let keyCode:Int
+    let key: Key?
     
     static func detectCurrent() -> Mode {
         let monoState = SettingsWrapper.isMonoAudio()
